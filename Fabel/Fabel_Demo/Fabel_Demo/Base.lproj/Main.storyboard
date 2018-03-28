@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Fabel Top View Controller-->
         <scene sceneID="gRH-rA-vIY">
             <objects>
-                <viewController id="wpV-78-P8b" customClass="ViewController" customModule="Fabel_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wpV-78-P8b" customClass="FabelTopViewController" customModule="Fabel_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nlm-Qw-dGy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,6 +38,9 @@
                                         <state key="normal" title="Effect">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onButton:" destination="wpV-78-P8b" eventType="touchUpInside" id="ymT-qX-qoH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -60,6 +63,9 @@
                         <viewLayoutGuide key="safeArea" id="6os-PH-ZT1"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="wHG-Ur-nw8"/>
+                    <connections>
+                        <outlet property="button" destination="Z7t-J2-7zj" id="Lf0-fw-vfz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qF2-sb-wlg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

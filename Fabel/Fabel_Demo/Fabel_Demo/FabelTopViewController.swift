@@ -8,15 +8,22 @@
 
 import Foundation
 import UIKit
+import Fabel
 
 class FabelTopViewController: UIViewController {
+    
+    @IBOutlet weak var button: UIButton!
+    
+    @IBAction func onButton(_ sender: Any) {
+        let item = UIView()
+        item.backgroundColor = UIColor(patternImage: UIImage(named: "Fabel_Icon")!)
+        FlyToFAB(item: UIView(), originpoint: self.button.frame.origin, endpoint: (self.tabBarController?.tabBar.center)!)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    /// シングルタップ時に実行される
-    @objc func tapSingle(_ sender: AnyObject) {
-        NSLog("location:\(sender.accessibilityActivationPoint)")
-    }
 }
+
+extension FabelTopViewController: FabelFlyItemToPointDelegate {}

@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4DFC89DE206B6E9C00E01F94 /* Fabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFC89D0206B6E9C00E01F94 /* Fabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DFC89E8206B6F8000E01F94 /* FabelFlyItemToPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC89E7206B6F8000E01F94 /* FabelFlyItemToPoint.swift */; };
+		4DFC89E8206B6F8000E01F94 /* FabelFlyItemToPointDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC89E7206B6F8000E01F94 /* FabelFlyItemToPointDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4DFC89CD206B6E9C00E01F94 /* Fabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFC89D0206B6E9C00E01F94 /* Fabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fabel.h; sourceTree = "<group>"; };
 		4DFC89D1206B6E9C00E01F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DFC89E7206B6F8000E01F94 /* FabelFlyItemToPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabelFlyItemToPoint.swift; sourceTree = "<group>"; };
+		4DFC89E7206B6F8000E01F94 /* FabelFlyItemToPointDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabelFlyItemToPointDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 			children = (
 				4DFC89D0206B6E9C00E01F94 /* Fabel.h */,
 				4DFC89D1206B6E9C00E01F94 /* Info.plist */,
-				4DFC89E7206B6F8000E01F94 /* FabelFlyItemToPoint.swift */,
+				4DFC89E7206B6F8000E01F94 /* FabelFlyItemToPointDelegate.swift */,
 			);
 			path = Fabel;
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DFC89E8206B6F8000E01F94 /* FabelFlyItemToPoint.swift in Sources */,
+				4DFC89E8206B6F8000E01F94 /* FabelFlyItemToPointDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
