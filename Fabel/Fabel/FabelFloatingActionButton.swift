@@ -11,15 +11,14 @@ import UIKit
 
 class FabelFloatingActionButton: UIButton {
     
-    let startPoint: CGPoint!
-    let item: UIView!
+    let startPoint: CGPoint! = nil
     
-    button.backgroundColor = UIColor.red // ボタンの背景色を赤に
-    let image = UIImage(named: "hogeImage") // hogeImageという名前の画像
-    button.setBackgroundImage(image, for: .normal) // 背景に画像をset
+    //button.backgroundColor = UIColor.red // ボタンの背景色を赤に
+    //let image = UIImage(named: "hogeImage") // hogeImageという名前の画像
+    //button.setBackgroundImage(image, for: .normal) // 背景に画像をset
     
     // Fly Item to FloatingActionButton
-    private func FlyToFAB(frame: ) {
+    private func FlyToFAB(item: UIView) {
         
     }
     
