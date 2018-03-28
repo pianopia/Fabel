@@ -7,76 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D35834F206B303100A27886 /* Fabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D358345206B303100A27886 /* Fabel.framework */; };
-		4D358356206B303100A27886 /* Fabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D358348206B303100A27886 /* Fabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D3583A5206B3B2F00A27886 /* FabelFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3583A4206B3B2F00A27886 /* FabelFloatingActionButton.swift */; };
-		4D3583A7206B3D0F00A27886 /* FabelFloatingActionButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3583A6206B3D0F00A27886 /* FabelFloatingActionButton.storyboard */; };
+		4DFC89DE206B6E9C00E01F94 /* Fabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFC89D0206B6E9C00E01F94 /* Fabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DFC89E8206B6F8000E01F94 /* FabelFlyItemToPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC89E7206B6F8000E01F94 /* FabelFlyItemToPoint.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4D358350206B303100A27886 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D35833C206B303000A27886 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D358344206B303100A27886;
-			remoteInfo = Fabel;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		4D358345206B303100A27886 /* Fabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D358348206B303100A27886 /* Fabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fabel.h; sourceTree = "<group>"; };
-		4D358349206B303100A27886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D35834E206B303100A27886 /* FabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D3583A1206B399800A27886 /* Fabel_Demo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fabel_Demo; sourceTree = "<group>"; };
-		4D3583A4206B3B2F00A27886 /* FabelFloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabelFloatingActionButton.swift; sourceTree = "<group>"; };
-		4D3583A6206B3D0F00A27886 /* FabelFloatingActionButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FabelFloatingActionButton.storyboard; sourceTree = "<group>"; };
+		4DFC89CD206B6E9C00E01F94 /* Fabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DFC89D0206B6E9C00E01F94 /* Fabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fabel.h; sourceTree = "<group>"; };
+		4DFC89D1206B6E9C00E01F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DFC89E7206B6F8000E01F94 /* FabelFlyItemToPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabelFlyItemToPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4D358341206B303100A27886 /* Frameworks */ = {
+		4DFC89C9206B6E9C00E01F94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D35834B206B303100A27886 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D35834F206B303100A27886 /* Fabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D35833B206B303000A27886 = {
+		4DFC89C3206B6E9C00E01F94 = {
 			isa = PBXGroup;
 			children = (
-				4D3583A1206B399800A27886 /* Fabel_Demo */,
-				4D358347206B303100A27886 /* Fabel */,
-				4D358346206B303100A27886 /* Products */,
+				4DFC89CF206B6E9C00E01F94 /* Fabel */,
+				4DFC89CE206B6E9C00E01F94 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4D358346206B303100A27886 /* Products */ = {
+		4DFC89CE206B6E9C00E01F94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4D358345206B303100A27886 /* Fabel.framework */,
-				4D35834E206B303100A27886 /* FabelTests.xctest */,
+				4DFC89CD206B6E9C00E01F94 /* Fabel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4D358347206B303100A27886 /* Fabel */ = {
+		4DFC89CF206B6E9C00E01F94 /* Fabel */ = {
 			isa = PBXGroup;
 			children = (
-				4D358348206B303100A27886 /* Fabel.h */,
-				4D358349206B303100A27886 /* Info.plist */,
-				4D3583A4206B3B2F00A27886 /* FabelFloatingActionButton.swift */,
-				4D3583A6206B3D0F00A27886 /* FabelFloatingActionButton.storyboard */,
+				4DFC89D0206B6E9C00E01F94 /* Fabel.h */,
+				4DFC89D1206B6E9C00E01F94 /* Info.plist */,
+				4DFC89E7206B6F8000E01F94 /* FabelFlyItemToPoint.swift */,
 			);
 			path = Fabel;
 			sourceTree = "<group>";
@@ -84,25 +58,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4D358342206B303100A27886 /* Headers */ = {
+		4DFC89CA206B6E9C00E01F94 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D358356206B303100A27886 /* Fabel.h in Headers */,
+				4DFC89DE206B6E9C00E01F94 /* Fabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4D358344206B303100A27886 /* Fabel */ = {
+		4DFC89CC206B6E9C00E01F94 /* Fabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D358359206B303100A27886 /* Build configuration list for PBXNativeTarget "Fabel" */;
+			buildConfigurationList = 4DFC89E1206B6E9C00E01F94 /* Build configuration list for PBXNativeTarget "Fabel" */;
 			buildPhases = (
-				4D358340206B303100A27886 /* Sources */,
-				4D358341206B303100A27886 /* Frameworks */,
-				4D358342206B303100A27886 /* Headers */,
-				4D358343206B303100A27886 /* Resources */,
+				4DFC89C8206B6E9C00E01F94 /* Sources */,
+				4DFC89C9206B6E9C00E01F94 /* Frameworks */,
+				4DFC89CA206B6E9C00E01F94 /* Headers */,
+				4DFC89CB206B6E9C00E01F94 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -110,76 +84,45 @@
 			);
 			name = Fabel;
 			productName = Fabel;
-			productReference = 4D358345206B303100A27886 /* Fabel.framework */;
+			productReference = 4DFC89CD206B6E9C00E01F94 /* Fabel.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		4D35834D206B303100A27886 /* FabelTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D35835C206B303100A27886 /* Build configuration list for PBXNativeTarget "FabelTests" */;
-			buildPhases = (
-				4D35834A206B303100A27886 /* Sources */,
-				4D35834B206B303100A27886 /* Frameworks */,
-				4D35834C206B303100A27886 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4D358351206B303100A27886 /* PBXTargetDependency */,
-			);
-			name = FabelTests;
-			productName = FabelTests;
-			productReference = 4D35834E206B303100A27886 /* FabelTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4D35833C206B303000A27886 /* Project object */ = {
+		4DFC89C4206B6E9C00E01F94 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = shota.nakagawa;
 				TargetAttributes = {
-					4D358344206B303100A27886 = {
+					4DFC89CC206B6E9C00E01F94 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
-					4D35834D206B303100A27886 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
-			buildConfigurationList = 4D35833F206B303000A27886 /* Build configuration list for PBXProject "Fabel" */;
+			buildConfigurationList = 4DFC89C7206B6E9C00E01F94 /* Build configuration list for PBXProject "Fabel" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 4D35833B206B303000A27886;
-			productRefGroup = 4D358346206B303100A27886 /* Products */;
+			mainGroup = 4DFC89C3206B6E9C00E01F94;
+			productRefGroup = 4DFC89CE206B6E9C00E01F94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4D358344206B303100A27886 /* Fabel */,
-				4D35834D206B303100A27886 /* FabelTests */,
+				4DFC89CC206B6E9C00E01F94 /* Fabel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4D358343206B303100A27886 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D3583A7206B3D0F00A27886 /* FabelFloatingActionButton.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D35834C206B303100A27886 /* Resources */ = {
+		4DFC89CB206B6E9C00E01F94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,33 +132,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4D358340206B303100A27886 /* Sources */ = {
+		4DFC89C8206B6E9C00E01F94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D3583A5206B3B2F00A27886 /* FabelFloatingActionButton.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D35834A206B303100A27886 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				4DFC89E8206B6F8000E01F94 /* FabelFlyItemToPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		4D358351206B303100A27886 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4D358344206B303100A27886 /* Fabel */;
-			targetProxy = 4D358350206B303100A27886 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		4D358357206B303100A27886 /* Debug */ = {
+		4DFC89DF206B6E9C00E01F94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -275,7 +203,7 @@
 			};
 			name = Debug;
 		};
-		4D358358206B303100A27886 /* Release */ = {
+		4DFC89E0206B6E9C00E01F94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -328,7 +256,7 @@
 			};
 			name = Release;
 		};
-		4D35835A206B303100A27886 /* Debug */ = {
+		4DFC89E2206B6E9C00E01F94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -352,7 +280,7 @@
 			};
 			name = Debug;
 		};
-		4D35835B206B303100A27886 /* Release */ = {
+		4DFC89E3206B6E9C00E01F94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -375,67 +303,28 @@
 			};
 			name = Release;
 		};
-		4D35835D206B303100A27886 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MUB7P4JVAG;
-				INFOPLIST_FILE = FabelTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = museit.FabelTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4D35835E206B303100A27886 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MUB7P4JVAG;
-				INFOPLIST_FILE = FabelTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = museit.FabelTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4D35833F206B303000A27886 /* Build configuration list for PBXProject "Fabel" */ = {
+		4DFC89C7206B6E9C00E01F94 /* Build configuration list for PBXProject "Fabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4D358357206B303100A27886 /* Debug */,
-				4D358358206B303100A27886 /* Release */,
+				4DFC89DF206B6E9C00E01F94 /* Debug */,
+				4DFC89E0206B6E9C00E01F94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D358359206B303100A27886 /* Build configuration list for PBXNativeTarget "Fabel" */ = {
+		4DFC89E1206B6E9C00E01F94 /* Build configuration list for PBXNativeTarget "Fabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4D35835A206B303100A27886 /* Debug */,
-				4D35835B206B303100A27886 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D35835C206B303100A27886 /* Build configuration list for PBXNativeTarget "FabelTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D35835D206B303100A27886 /* Debug */,
-				4D35835E206B303100A27886 /* Release */,
+				4DFC89E2206B6E9C00E01F94 /* Debug */,
+				4DFC89E3206B6E9C00E01F94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4D35833C206B303000A27886 /* Project object */;
+	rootObject = 4DFC89C4206B6E9C00E01F94 /* Project object */;
 }
