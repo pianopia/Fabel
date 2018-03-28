@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fabel_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob6-RD-gHR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fabel_LP" translatesAutoresizingMaskIntoConstraints="NO" id="QCt-eQ-f7I">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="1000"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="QCt-eQ-f7I" firstAttribute="top" secondItem="Ob6-RD-gHR" secondAttribute="top" id="6XG-Px-pXj"/>
+                                    <constraint firstItem="QCt-eQ-f7I" firstAttribute="leading" secondItem="Ob6-RD-gHR" secondAttribute="leading" id="DDS-dx-McI"/>
+                                    <constraint firstAttribute="trailing" secondItem="QCt-eQ-f7I" secondAttribute="trailing" id="WXh-lg-83e"/>
+                                    <constraint firstAttribute="bottom" secondItem="QCt-eQ-f7I" secondAttribute="bottom" id="a7m-mE-dLm"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ob6-RD-gHR" secondAttribute="trailing" id="7gz-3h-Zsk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ob6-RD-gHR" secondAttribute="bottom" id="Fss-kX-dJK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="Ob6-RD-gHR" secondAttribute="top" constant="20" id="ZWN-Dw-HNh" userLabel="Safe Area.top = Scroll View.top"/>
+                            <constraint firstItem="Ob6-RD-gHR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vu7-Tg-MtO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fabel_LP" width="400" height="1000"/>
+    </resources>
+</document>
