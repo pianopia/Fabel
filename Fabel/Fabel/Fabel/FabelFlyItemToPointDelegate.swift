@@ -26,7 +26,9 @@ public extension FabelFlyItemToPointDelegate where Self: UIViewController {
         self.view.addSubview(item)
 
             
-        UIView.animate(withDuration: 1.5, delay: 0, options: .curveEaseInOut, animations: {
+        UIView.animate(withDuration: 1.2, delay: 0, options: .curveEaseInOut, animations: {
+            item.frame.origin.x = endpoint.x + 30
+            item.frame.origin.y = endpoint.y - 20
             item.frame.origin = endpoint
         }, completion: { (finished: Bool) in
             item.removeFromSuperview()
