@@ -15,37 +15,82 @@ public protocol FabelFlyItemToPointDelegate {}
 // MARK: UIViewControllerへのDelegate
 public extension FabelFlyItemToPointDelegate where Self: UIViewController {
     
-    private func setupItemDesign(item: UIView, image: UIImage) {
+    // UIViewのItemを
+    func flyToFAB(item: UIView, originpoint: CGPoint, endpoint: CGPoint) {
         
-    }
-    
-    func FlyToFAB(item: UIView, originpoint: CGPoint, endpoint: CGPoint) {
-        item.frame.size.width = 30
-        item.frame.size.height = 30
-        item.backgroundColor = .red
+        item.frame.origin.x = originpoint.x
+        item.frame.origin.y = originpoint.y
         self.view.addSubview(item)
-
-            
-        UIView.animate(withDuration: 1.2, delay: 0, options: .curveEaseInOut, animations: {
-            item.frame.origin.x = endpoint.x + 30
-            item.frame.origin.y = endpoint.y - 20
-            item.frame.origin = endpoint
-        }, completion: { (finished: Bool) in
+        
+        let jumpHeight: CGFloat = 100.0
+        
+        CATransaction.begin()
+        // CAKeyframeAnimationオブジェクトを生成
+        let animation = CAKeyframeAnimation(keyPath: "position")
+        animation.fillMode = kCAFillModeForwards
+        animation.isRemovedOnCompletion = false
+        animation.duration = 1.0
+        
+        let path = CGMutablePath()
+        path.move(to: CGPoint(x: originpoint.x, y: originpoint.y))
+        path.addCurve(to: endpoint, control1: CGPoint(x: originpoint.x - jumpHeight/2, y: originpoint.y - jumpHeight), control2: CGPoint(x: endpoint.x - jumpHeight/2, y: originpoint.y - jumpHeight))
+        animation.path = path
+        
+        // Callback function
+        CATransaction.setCompletionBlock {
             item.removeFromSuperview()
-            UIView.animate(withDuration: 1, animations: {
-                let rotation = CGAffineTransform(rotationAngle: CGFloat(M_PI_2))
-                let imageView = self.tabBarController?.tabBar.subviews[0]
-                imageView?.contentMode = .center
-                imageView?.transform = rotation
-            })
-        })
-
+        }
+        
+        item.layer.add(animation, forKey: nil)
+        CATransaction.commit()
+        
+        item.layer.animation(forKey: "position")
     }
     
-     private func shake() {
-        UIView.animate(withDuration: 2, animations: {
-            // 対象を揺らすアニメーション
-        })
+    // UIImageViewのItemを使用
+    func flyToFAB(item: UIImageView, originpoint: CGPoint, endpoint: CGPoint) {
+        
+        item.frame.origin.x = originpoint.x
+        item.frame.origin.y = originpoint.y
+        self.view.addSubview(item)
+        
+        let jumpHeight: CGFloat = 100.0
+        
+        CATransaction.begin()
+        // CAKeyframeAnimationオブジェクトを生成
+        let animation = CAKeyframeAnimation(keyPath: "position")
+        animation.fillMode = kCAFillModeForwards
+        animation.isRemovedOnCompletion = false
+        animation.duration = 1.0
+        
+        let path = CGMutablePath()
+        path.move(to: CGPoint(x: originpoint.x, y: originpoint.y))
+        path.addCurve(to: endpoint, control1: CGPoint(x: originpoint.x - jumpHeight/2, y: originpoint.y - jumpHeight), control2: CGPoint(x: endpoint.x - jumpHeight/2, y: originpoint.y - jumpHeight))
+        animation.path = path
+        
+        // Callback function
+        CATransaction.setCompletionBlock {
+            item.removeFromSuperview()
+            self.shake(item: self.tabBarController?.tabBar.subviews[1].subviews.first as! UIImageView)
+        }
+        
+        item.layer.add(animation, forKey: nil)
+        CATransaction.commit()
+        
+        item.layer.animation(forKey: "position")
     }
     
+    private func shake(item: UIImageView) {
+        CATransaction.begin()
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.05
+        animation.repeatCount = 3
+        animation.fromValue = [item.center.x, item.center.y]
+        animation.toValue = [item.center.x - 5, item.center.y]
+        
+        item.layer.add(animation, forKey: nil)
+        CATransaction.commit()
+        
+        item.layer.animation(forKey: "position")
+    }
 }

@@ -13,15 +13,37 @@ import Fabel
 class FabelTopViewController: UIViewController {
     
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var button2: UIButton!
     
     @IBAction func onButton(_ sender: Any) {
-        let item = UIView()
-        item.backgroundColor = UIColor(patternImage: UIImage(named: "Fabel_Icon")!)
-        FlyToFAB(item: UIView(), originpoint: self.button.frame.origin, endpoint: (self.tabBarController?.tabBar.center)!)
+        let item = createItemImage()
+        flyToFAB(item: item, originpoint: self.button.center, endpoint: (self.tabBarController?.tabBar.center)!)
     }
     
+    @IBAction func onButton2(_ sender: Any) {
+        let item = createItemImage()
+        flyToFAB(item: item, originpoint: self.button2.center , endpoint: (self.tabBarController?.tabBar.center)!)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    private func createItem() -> UIView {
+        let item = UIView()
+        item.frame.size.width = 30
+        item.frame.size.height = 30
+        item.backgroundColor = .red
+        item.layer.cornerRadius = 15
+        return item
+    }
+    
+    private func createItemImage() -> UIImageView {
+        let item = UIImageView.init(image: UIImage.init(named: "Fabel_Icon"))
+        item.frame.size.width = 30
+        item.frame.size.height = 30
+        item.backgroundColor = .red
+        return item
+
     }
     
 }

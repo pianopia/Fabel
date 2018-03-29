@@ -42,11 +42,28 @@
                                             <action selector="onButton:" destination="wpV-78-P8b" eventType="touchUpInside" id="ymT-qX-qoH"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbL-dP-Dt6">
+                                        <rect key="frame" x="235" y="438" width="106" height="40"/>
+                                        <color key="backgroundColor" red="0.80784313730000001" green="0.69803921570000005" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="HeK-uZ-C1G"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="106" id="gKa-SM-Dcu"/>
+                                        </constraints>
+                                        <state key="normal" title="Effect">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onButton2:" destination="wpV-78-P8b" eventType="touchUpInside" id="Cco-tR-zfG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="UbL-dP-Dt6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QBz-fw-nZZ" secondAttribute="leading" id="07D-2O-phi"/>
                                     <constraint firstItem="Z7t-J2-7zj" firstAttribute="top" secondItem="QBz-fw-nZZ" secondAttribute="top" constant="28" id="Dm2-9y-wKC"/>
                                     <constraint firstAttribute="bottom" secondItem="QCt-eQ-f7I" secondAttribute="bottom" id="FcF-3n-mbh"/>
+                                    <constraint firstItem="UbL-dP-Dt6" firstAttribute="top" secondItem="QBz-fw-nZZ" secondAttribute="top" constant="438" id="Fux-D0-GmW"/>
                                     <constraint firstItem="QCt-eQ-f7I" firstAttribute="leading" secondItem="QBz-fw-nZZ" secondAttribute="leading" id="Z6g-jw-vsQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="UbL-dP-Dt6" secondAttribute="trailing" constant="34" id="dk9-6I-WMW"/>
                                     <constraint firstItem="QCt-eQ-f7I" firstAttribute="top" secondItem="QBz-fw-nZZ" secondAttribute="top" id="e8S-F7-Hrb"/>
                                     <constraint firstAttribute="trailing" secondItem="QCt-eQ-f7I" secondAttribute="trailing" id="wvO-2n-rkj"/>
                                     <constraint firstItem="Z7t-J2-7zj" firstAttribute="leading" secondItem="QBz-fw-nZZ" secondAttribute="leading" constant="24" id="yv3-t3-b89"/>
@@ -65,11 +82,12 @@
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="wHG-Ur-nw8"/>
                     <connections>
                         <outlet property="button" destination="Z7t-J2-7zj" id="Lf0-fw-vfz"/>
+                        <outlet property="button2" destination="UbL-dP-Dt6" id="VOf-WF-LEW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qF2-sb-wlg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="73" y="-1110"/>
+            <point key="canvasLocation" x="72.799999999999997" y="-1110.4947526236883"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qLU-xl-ta9">
