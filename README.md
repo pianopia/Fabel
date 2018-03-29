@@ -6,6 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/Fabel.svg?style=flat)](http://cocoapods.org/pods/Fabel)
 
 This is swift library for interactive animation for fly item to others.
+
 Please extend delegate to your UIViewController and call flytoFAB() method.
 
 ## Example
