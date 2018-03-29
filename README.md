@@ -22,7 +22,7 @@ pod 'Fabel'
 
 ## Author
 
-luxa-nakagawa, grandpianoaoa@gmail.com
+pianopia, grandpianoaoa@gmail.com
 
 ## License
 
