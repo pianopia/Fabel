@@ -9,6 +9,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+![Fabel_Demo](1522307096.gif)
+
 ## Requirements
 
 ## Installation
