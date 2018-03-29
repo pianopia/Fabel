@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Fabel'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Fabel.'
+  s.version          = '1.0.0'
+  s.summary          = 'Interactive Animation for Fly Item to Point '
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/luxa-nakagawa/Fabel'
+  s.homepage         = 'https://github.com/pianopia/Fabel'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'luxa-nakagawa' => 'grandpianoaoa@gmail.com' }
-  s.source           = { :git => 'https://github.com/luxa-nakagawa/Fabel.git', :tag => s.version.to_s }
+  s.author           = { 'piaopia' => 'grandpianoaoa@gmail.com' }
+  s.source           = { :git => 'https://github.com/pianopia/Fabel.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
+  s.swift_version = '3.2'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'Fabel/Classes/**/*'
   
