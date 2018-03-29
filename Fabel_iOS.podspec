@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Fabel_iOS"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "Interactive Animation for Floating Action Button"
 
   # This description is used to generate tags and improve search results.
