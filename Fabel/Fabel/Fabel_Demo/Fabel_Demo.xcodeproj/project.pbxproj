@@ -230,6 +230,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				"SYSTEM_FRAMEWORK_SEARCH_PATHS[arch=*]" = ../Fabel;
 			};
 			name = Debug;
 		};
@@ -280,6 +281,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				"SYSTEM_FRAMEWORK_SEARCH_PATHS[arch=*]" = ../Fabel;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
