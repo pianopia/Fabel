@@ -13,7 +13,8 @@
 		4D358379206B31F300A27886 /* Fabel_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D358377206B31F300A27886 /* Fabel_Demo.xcdatamodeld */; };
 		4D35837B206B31F300A27886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D35837A206B31F300A27886 /* Assets.xcassets */; };
 		4D35837E206B31F300A27886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D35837C206B31F300A27886 /* LaunchScreen.storyboard */; };
-		4DFC89EA206B7EF000E01F94 /* Fabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFC89E9206B7EF000E01F94 /* Fabel.framework */; };
+		4DF08FE7206C96D80001CFBA /* Fabel.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC89E9206B7EF000E01F94 /* Fabel.framework */; };
+		4DFC89EA206B7EF000E01F94 /* Fabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFC89E9206B7EF000E01F94 /* Fabel.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4DFC89EB206B7EF000E01F94 /* Fabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFC89E9206B7EF000E01F94 /* Fabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DFC89F0206B9FED00E01F94 /* FabelTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC89EF206B9FED00E01F94 /* FabelTopViewController.swift */; };
 /* End PBXBuildFile section */
@@ -149,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF08FE7206C96D80001CFBA /* Fabel.framework in Resources */,
 				4D35837E206B31F300A27886 /* LaunchScreen.storyboard in Resources */,
 				4D35837B206B31F300A27886 /* Assets.xcassets in Resources */,
 				4D358376206B31F300A27886 /* Main.storyboard in Resources */,
