@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "Fabel"
+  s.name         = "Fabel_iOS"
   s.version      = "1.0.0"
   s.summary      = "Interactive animation for Fly item to others."
   s.description  = <<-DESC
