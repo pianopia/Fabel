@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Fabel_Example' do
+  pod 'Fabel', :path => '../'
+
+  target 'Fabel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

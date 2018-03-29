@@ -1,0 +1,6 @@
+framework module Fabel {
+  umbrella header "Fabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

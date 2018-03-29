@@ -1,0 +1,22 @@
+{
+  "name": "Fabel",
+  "version": "0.1.0",
+  "summary": "A short description of Fabel.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/luxa-nakagawa/Fabel",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "luxa-nakagawa": "grandpianoaoa@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/luxa-nakagawa/Fabel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Fabel/Classes/**/*"
+}
