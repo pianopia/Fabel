@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "pianopia" => "grandpianoaoa@gmail.com" }
   s.platform     = :ios, "9.0"
+  s.swift_version= "3.2"
   s.source       = { :git => "https://github.com/pianopia/Fabel_iOS.git", :tag => s.version }
   s.source_files  = "Fabel/**/*.swift"
   s.requires_arc = true

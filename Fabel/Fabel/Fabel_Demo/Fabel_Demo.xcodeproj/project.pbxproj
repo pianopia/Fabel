@@ -14,24 +14,8 @@
 		4D35837B206B31F300A27886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D35837A206B31F300A27886 /* Assets.xcassets */; };
 		4D35837E206B31F300A27886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D35837C206B31F300A27886 /* LaunchScreen.storyboard */; };
 		4DF08FE7206C96D80001CFBA /* Fabel.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC89E9206B7EF000E01F94 /* Fabel.framework */; };
-		4DFC89EA206B7EF000E01F94 /* Fabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFC89E9206B7EF000E01F94 /* Fabel.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		4DFC89EB206B7EF000E01F94 /* Fabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFC89E9206B7EF000E01F94 /* Fabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DFC89F0206B9FED00E01F94 /* FabelTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC89EF206B9FED00E01F94 /* FabelTopViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		4DFC89EC206B7EF000E01F94 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4DFC89EB206B7EF000E01F94 /* Fabel.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4D35836D206B31F300A27886 /* Fabel_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fabel_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DFC89EA206B7EF000E01F94 /* Fabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +83,6 @@
 				4D358369206B31F300A27886 /* Sources */,
 				4D35836A206B31F300A27886 /* Frameworks */,
 				4D35836B206B31F300A27886 /* Resources */,
-				4DFC89EC206B7EF000E01F94 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +209,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -284,6 +267,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -309,7 +293,7 @@
 				DEVELOPMENT_TEAM = MUB7P4JVAG;
 				INFOPLIST_FILE = Fabel_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(SRCROOT) $(SRCROOT)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "museit.Fabel-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -326,7 +310,7 @@
 				DEVELOPMENT_TEAM = MUB7P4JVAG;
 				INFOPLIST_FILE = Fabel_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(SRCROOT) $(SRCROOT)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "museit.Fabel-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

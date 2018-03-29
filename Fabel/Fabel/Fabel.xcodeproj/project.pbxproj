@@ -11,7 +11,18 @@
 		4DFC89E8206B6F8000E01F94 /* FabelFlyItemToPointDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC89E7206B6F8000E01F94 /* FabelFlyItemToPointDelegate.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4DF08FED206C984C0001CFBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF08FE9206C984B0001CFBA /* Fabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4D358345206B303100A27886;
+			remoteInfo = Fabel;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4DF08FE9206C984B0001CFBA /* Fabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fabel.xcodeproj; path = Fabel_Demo/Fabel_Demo.xcodeproj/Fabel.xcodeproj; sourceTree = "<group>"; };
 		4DFC89CD206B6E9C00E01F94 /* Fabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFC89D0206B6E9C00E01F94 /* Fabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fabel.h; sourceTree = "<group>"; };
 		4DFC89D1206B6E9C00E01F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,11 +40,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DF08FE8206C984B0001CFBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DF08FE9206C984B0001CFBA /* Fabel.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DF08FEA206C984B0001CFBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DF08FEE206C984C0001CFBA /* Fabel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4DFC89C3206B6E9C00E01F94 = {
 			isa = PBXGroup;
 			children = (
 				4DFC89CF206B6E9C00E01F94 /* Fabel */,
 				4DFC89CE206B6E9C00E01F94 /* Products */,
+				4DF08FE8206C984B0001CFBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,12 +142,28 @@
 			mainGroup = 4DFC89C3206B6E9C00E01F94;
 			productRefGroup = 4DFC89CE206B6E9C00E01F94 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4DF08FEA206C984B0001CFBA /* Products */;
+					ProjectRef = 4DF08FE9206C984B0001CFBA /* Fabel.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4DFC89CC206B6E9C00E01F94 /* Fabel */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4DF08FEE206C984C0001CFBA /* Fabel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Fabel.framework;
+			remoteRef = 4DF08FED206C984C0001CFBA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4DFC89CB206B6E9C00E01F94 /* Resources */ = {
